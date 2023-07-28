@@ -1,14 +1,15 @@
-let num = Number(prompt("son kiriting"));
-let b;
-let c;
-for (let i = 0; i <= num; i++) {
-    if (num % i == 0) {
-        var d = b;
+let n = Number(prompt("Son kiriting..."));
+let toqson;
+
+for (let i = 2; i <= n; i++) {
+  for (let j = 2; j < i; j++) {
+    toqson = 1;
+    if (i % j === 0) {
+      isPrime = 0;
+      break;
     }
-    break;
-}
-if (d) {
-    console.log("tub emas");
-} else if (c) {
-    console.log("tub son");
+  }
+  if (toqson === 1) {
+    console.log(i);
+  }
 }
