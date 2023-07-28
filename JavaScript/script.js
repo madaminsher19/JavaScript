@@ -1,15 +1,28 @@
-let n = Number(prompt("Son kiriting..."));
-let toqson;
+let num1 = Number(prompt("Birinchi sonni tiriting"));
+let num2 = Number(prompt("Ikkinchi sonni tiriting"));
+let amal = prompt("bajarilishi kerak bo'lgan amalnini kiriting");
 
-for (let i = 2; i <= n; i++) {
-  for (let j = 2; j < i; j++) {
-    toqson = 1;
-    if (i % j === 0) {
-      isPrime = 0;
-      break;
-    }
-  }
-  if (toqson === 1) {
-    console.log(i);
-  }
+switch (amal) {
+    case "+":
+        console.log(num1 + num2);
+        break;
+    case "-":
+        console.log(num1 - num2);
+        break;
+    case "*":
+        console.log(num1 * num2);
+        break;
+    case "/":
+        console.log(num1 / num2);
+        break;
+    case "%":
+        console.log(num1 % num2);
+        break;
+    case "**":
+        console.log(num1 ** num2);
+        break;
+
+    default:
+        console.log("siz noto'g'ri amal kiritdingiz");
+        break;
 }
