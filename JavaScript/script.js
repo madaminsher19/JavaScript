@@ -1,32 +1,10 @@
-const  elinput= document.querySelector(".section__input");
-const  elbtn= document.querySelector(".section__btn");
-const  elpiyoda= document.querySelector("#piyoda");
-const  elvelosipedist= document.querySelector("#velosipedist");
-const  eltaxi= document.querySelector("#taxi");
-const  elsamalyot= document.querySelector("#samalyot");
-
-
-elbtn.addEventListener("click", function (evt) {
-  evt.preventDefault()
- elpiyoda.innerHTML=`
- ${elinput.value / 3.6 } soat ` 
-  
-})
-elbtn.addEventListener("click", function (evt) {
-  evt.preventDefault()
-  elvelosipedist.innerHTML=`
- ${elinput.value / 20.1 } soat ` 
-  
-})
-elbtn.addEventListener("click", function (evt) {
-  evt.preventDefault()
- eltaxi.innerHTML=`
- ${elinput.value / 70} soat ` 
-  
-})
-elbtn.addEventListener("click", function (evt) {
-  evt.preventDefault()
- elsamalyot.innerHTML=`
- ${elinput.value / 800 } soat ` 
-  
-})
+let num1 = prompt("son kiriting");
+if (num1 / 15 === 0) {
+    console.log("FizzBuz");
+} else if (num1 / 5 === 0) {
+    console.log("Buz");
+} else if (num1 / 3 === 0) {
+    console.log("Buz");
+} else {
+    console.log("Bu son 3ga va 5ga bo'inmaydi");
+}
