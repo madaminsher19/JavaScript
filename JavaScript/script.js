@@ -9,7 +9,7 @@ elBtn.addEventListener("click", function (evt) {
     if (elInput.value < 11) {
         elBorder1.style.display = "block";
         elBorder2.style.display = "none";
-    }else if( elInput.value<16 && elInput.value >= 11){
+    }else if( elInput.value<=16 && elInput.value >= 11){
         elBorder1.style.display = "none";
         elBorder2.style.display = "block";
     }else if( elInput.value>16 ){
