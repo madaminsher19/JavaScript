@@ -1,10 +1,16 @@
-let num1 = prompt("son kiriting");
-if (num1 / 15 === 0) {
-    console.log("FizzBuz");
-} else if (num1 / 5 === 0) {
-    console.log("Buz");
-} else if (num1 / 3 === 0) {
-    console.log("Buz");
-} else {
-    console.log("Bu son 3ga va 5ga bo'inmaydi");
-}
+const elInput = document.querySelector(".input");
+const elBtn = document.querySelector(".btn");
+const elBorder1 = document.querySelector(".border1");
+const elBorder2 = document.querySelector(".border2");
+
+
+elBtn.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    if (elInput.value < 11) {
+        elBorder1.style.display = "block";
+        elBorder2.style.display = "none";
+    }else if(elInput.value >= 11){
+        elBorder1.style.display = "none";
+        elBorder2.style.display = "block";
+    } 
+});
